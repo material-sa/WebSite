@@ -17,25 +17,21 @@ export default defineNuxtConfig({
       },
       {
         src: "/bootstrap.min.js",
-      },
-      {
-        src: "/owl.carousel.js",
-      },
+      }
     ],
     link: [
       {
         rel: "stylesheet",
         href: "/bootstrap.min.css",
-      },
-      {
-        rel: "stylesheet",
-        href: "/owl.carousel.min.css",
-      },
+      }
     ],
   },
   css: [
     "bootstrap/dist/css/bootstrap.min.css",
     "~/assets/style/style.css",
-    ,
   ],
+	plugins: [
+		{src: '~/plugins/vue-carousel.js',mode:'client'} // Only works on client side
+	],
+
 });

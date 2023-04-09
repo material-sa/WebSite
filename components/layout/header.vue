@@ -5,7 +5,7 @@
 				<div class="row">
 					<div class="col-md-2 float-left">
 						<div class="logo">
-							<a href="index.html"><img alt="Logo" src="assets/img/logo.png" width="56" height="50"></a>
+							<a href="index.html"><img alt="Logo" src="~/assets/img/logo.png" width="56" height="50"></a>
 						</div>
 					</div>
 					<div class="col-md-10">
@@ -13,16 +13,16 @@
 							<div class="navbar-collapse collapse" id="navbar">
 								<ul class="nav navbar-nav main-nav float-right ml-auto">
 									<li class="active nav-item">
-										<a href="index.html" class="nav-link">HOME</a>
+										<NuxtLink to="/" class="nav-link">HOME</NuxtLink>
 									</li>
 									<li class="nav-item">
-										<a href="about-us.html" class="nav-link">ABOUT</a>
+										<NuxtLink to="/about-us" class="nav-link">ABOUT</NuxtLink>
 									</li>
 									<li class="nav-item">
-										<a href="departments.html" class="nav-link">PRODUCTS</a>
+										<NuxtLink to="/products" class="nav-link">PRODUCTS</NuxtLink>
 									</li>
 									<li class="nav-item">
-										<a href="services.html" class="nav-link">CONTACT</a>
+										<NuxtLink to="/contact" class="nav-link">CONTACT</NuxtLink>
 									</li>
 
 									<li class="dropdown nav-item">

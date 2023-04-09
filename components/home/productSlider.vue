@@ -10,13 +10,12 @@
         </div>
       </div>
     </div>
-    <no-ssr>
 		<div id="our_doctor" class="owl-carousel text-center">
       <div class="shadow item1" data-toggle="modal" data-target="#Buy">
         <div class="doctor text-center">
           <a href="#" class="a-edit card-a">
             <img
-              src="assets/img/water.png"
+              src="~/assets/img/water.png"
               alt="Dr. Albert Sandoval"
               class=""
               width="150"
@@ -35,7 +34,7 @@
         <div class="doctor text-center">
           <a href="#" class="a-edit">
             <img
-              src="assets/img/water.png"
+              src="~/assets/img/water.png"
               alt="Dr. Albert Sandoval"
               class=""
               width="150"
@@ -54,7 +53,7 @@
         <div class="doctor text-center">
           <a href="#" class="a-edit">
             <img
-              src="assets/img/water.png"
+              src="~/assets/img/water.png"
               alt="Dr. Albert Sandoval"
               class=""
               width="150"
@@ -73,7 +72,7 @@
         <div class="doctor text-center">
           <a href="#" class="a-edit">
             <img
-              src="assets/img/water.png"
+              src="~/assets/img/water.png"
               alt="Dr. Albert Sandoval"
               class=""
               width="150"
@@ -92,7 +91,7 @@
         <div class="doctor text-center">
           <a href="#" class="a-edit">
             <img
-              src="assets/img/water.png"
+              src="~/assets/img/water.png"
               alt="Dr. Albert Sandoval"
               class=""
               width="150"
@@ -111,7 +110,7 @@
         <div class="doctor text-center">
           <a href="#" class="a-edit" data-toggle="modal" data-target="#delete">
             <img
-              src="assets/img/water.png"
+              src="~/assets/img/water.png"
               alt="Dr. Albert Sandoval"
               class=""
               width="150"
@@ -130,7 +129,7 @@
         <div class="doctor text-center">
           <a href="#" class="a-edit">
             <img
-              src="assets/img/water.png"
+              src="~/assets/img/water.png"
               alt="Dr. Albert Sandoval"
               class=""
               width="150"
@@ -149,7 +148,7 @@
         <div class="doctor text-center">
           <a href="#" class="a-edit">
             <img
-              src="assets/img/water.png"
+              src="~/assets/img/water.png"
               alt="Dr. Albert Sandoval"
               class=""
               width="150"
@@ -168,7 +167,7 @@
         <div class="doctor text-center">
           <a href="#" class="a-edit">
             <img
-              src="assets/img/water.png"
+              src="~/assets/img/water.png"
               alt="Dr. Albert Sandoval"
               class=""
               width="150"
@@ -184,7 +183,6 @@
         </div>
       </div>
     </div>
-	</no-ssr>
   </section>
 </template>
 

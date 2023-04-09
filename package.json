@@ -16,6 +16,7 @@
     "@babel/polyfill": "^7.7.0",
     "bootstrap": "^4.6.2",
     "mutationobserver-shim": "^0.3.3",
+	"fs": "^0.0.1-security",
     "nuxt": "^3.3.3",
     "popper.js": "^1.16.0",
     "portal-vue": "^2.1.6",

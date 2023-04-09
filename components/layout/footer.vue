@@ -7,7 +7,7 @@
 						<div class="footer-widget">
 							
 							<div class="about-clinic">
-								<img src="assets/img/Logo-2.png "  class="img-footer" alt="">
+								<img src="~/assets/img/Logo-2.png "  class="img-footer" alt="">
 							</div>
 						</div>
 					</div>
