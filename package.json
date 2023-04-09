@@ -5,10 +5,22 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "bootstrap-vue": "^2.1.0",
+    "owl.carousel": "^2.3.4"
   },
   "devDependencies": {
-    "nuxt": "^3.3.3"
+    "@babel/polyfill": "^7.7.0",
+    "bootstrap": "^4.6.2",
+    "mutationobserver-shim": "^0.3.3",
+    "nuxt": "^3.3.3",
+    "popper.js": "^1.16.0",
+    "portal-vue": "^2.1.6",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-bootstrap": "~0.4.0"
   }
 }
