@@ -1,28 +1,31 @@
 {
-  "name": "nuxt-app",
+  "name": "nora",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "nuxt",
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "start": "nuxt start",
     "generate": "nuxt generate",
-    "postinstall": "nuxt prepare",
-    "preview": "nuxt preview"
+    "lint:prettier": "prettier --check .",
+    "lint": "npm run lint:prettier",
+    "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
-    "bootstrap-vue": "^2.1.0",
-    "owl.carousel": "^2.3.4"
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/i18n": "^7.3.1",
+    "@nuxtjs/pwa": "^3.3.5",
+    "bootstrap": "^4.6.2",
+    "bootstrap-vue": "^2.22.0",
+    "core-js": "^3.25.3",
+    "nuxt": "^2.15.8",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10",
+	"vue-carousel": "^0.18.0"
   },
   "devDependencies": {
-    "@babel/polyfill": "^7.7.0",
-    "@nuxtjs/i18n": "^8.0.0-beta.10",
-    "bootstrap": "^4.6.2",
-    "fs": "^0.0.1-security",
-    "mutationobserver-shim": "^0.3.3",
-    "nuxt": "^3.3.3",
-    "popper.js": "^1.16.0",
-    "portal-vue": "^2.1.6",
-    "sass": "^1.19.0",
-    "sass-loader": "^8.0.0",
-    "vue-cli-plugin-bootstrap": "~0.4.0"
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
   }
 }
