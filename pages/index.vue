@@ -1,9 +1,9 @@
 <template>
   <HomeSlider />
   <HomeBanner />
-  <ProductSlider title="New products" />
-  <ProductSlider title="Best Sellers" />
-  <ProductSlider title="Suggested Products" />
+  <ProductSlider :title="$t('main_page.new_products')" />
+  <ProductSlider :title="$t('main_page.best_sellers')" />
+  <ProductSlider :title="$t('main_page.suggested_products')" />
 </template>
 
 

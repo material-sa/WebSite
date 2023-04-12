@@ -33,5 +33,28 @@ export default defineNuxtConfig({
 	plugins: [
 		{src: '~/plugins/vue-carousel.js',mode:'client'} // Only works on client side
 	],
+	modules: [
+		'@nuxtjs/i18n',
+	  ],i18n: {
+		    lazy: true,
+			langDir: 'locales/',
+			strategy:"prefix_except_default",
+			locales: [
+				{
+				  code: 'en-US',
+				  iso: 'en-US',
+				  file: 'en-US.json',
+				  name: 'English',
+				},
+				{
+				  code: 'ar-SA',
+				  iso: 'ar-SA',
+				  file: 'ar-SA.json',
+				  name: 'Arabic',
+				},
+			  ],vueI18n: {
+				fallbackLocale: 'en-US',
+			  },defaultLocale: 'en-US',
+          },
 
 });

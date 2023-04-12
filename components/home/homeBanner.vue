@@ -1,8 +1,6 @@
 <template>
   <section class="section meet-doctors bg-white">
-	
-
-    <div id="our_doctor" class="owl-carousel text-center">
+	 <div id="our_doctor" class="owl-carousel text-center">
       <div class="item">
         <div class="doctor text-center">
           <a href="doctor-details.html">
@@ -104,5 +102,6 @@
     </div>
   </section>
 </template>
+
 
 

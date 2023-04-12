@@ -5,8 +5,8 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-6">
 						<div class="banner-content">
-							<h2 class="text-white">Local & Lmportrd Beverages</h2>
-							<h2 class="text-white pb-3">Delivery Solution</h2>
+							<h2 class="text-white">{{$t("main_page.slogan")}}</h2>
+							<h2 class="text-white pb-3">{{$t("main_page.slogan_sub")}}</h2>
 							
 							<div class="row absolute">
 								<div class="col-md-6">
@@ -14,11 +14,11 @@
 										<div class="">
 										  <div class="location1 d-flex">
 											<span class=" subheading" style="margin-right: 10px;;">
-											  <a href=""  > <img src="assets/img/appstore.svg" alt="" class="test-10"  style="margin-bottom: 10px; " /></a>
+											  <a href=""  > <img src="~/assets/img/appstore.svg" alt="" class="test-10"  style="margin-bottom: 10px; " /></a>
 											</span>
 											<span class="mb-3 subheading" style="margin-right: 10px">
 											  <a href="">
-												<img class="test-10" src="assets/img/googleplay.svg"  alt=""
+												<img class="test-10" src="~/assets/img/googleplay.svg"  alt=""
 											  /></a>
 											</span>
 										  </div>
@@ -29,7 +29,7 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-						<img class="hero" src="assets/img/Rectangle 51.png"  alt="">
+						<img class="hero" src="~/assets/img/Rectangle_51.png"  alt="">
 				</div>
 				</div>
 			</div>
