@@ -1,18 +1,18 @@
 <template>
 <div>
-	<Layout>
-	     <AboutUs />
-	</Layout> 
+	 
+	    <Products />
+	 
   </div>
 </template>
 
 
 <script>
-import AboutUs from "@/components/about/index.vue";
+import Products from "@/components/products/index.vue";
 import Layout from "@/layouts/main/index.vue";
 
 export default {
   name: "About Us",
-  components: { AboutUs ,Layout },
+  components: { Products ,Layout},
 };
 </script>

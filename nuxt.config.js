@@ -1,7 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  srcDir: 'src/',
   ssr: true,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -71,7 +70,7 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: 'https://dev2.spaceo.in/project/top_materials_web/code/public/api/v2/',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

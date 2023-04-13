@@ -1,18 +1,17 @@
 <template>
 <div>
-	<Layout>
-	    <contactUs />
-	</Layout> 
+	 
+	<contactUs />
+	 
   </div>
 </template>
 
 
 <script>
 import contactUs from "@/components/contactus/index.vue";
-import Layout from "@/layouts/main/index.vue";
 
 export default {
   name: "contact Us",
-  components: { contactUs , Layout},
+  components: { contactUs },
 };
 </script>

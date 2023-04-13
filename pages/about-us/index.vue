@@ -1,5 +1,5 @@
 <template>
-	<section style="background: #F7F7F7;">
+    <section style="background: #F7F7F7;">
 		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-indicators" >
 			  <button type="button"  data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: blue;"></button>
@@ -43,3 +43,12 @@
 		  </div>
 	</section>
 </template>
+
+
+<script>
+
+export default {
+  name: 'About Us',
+  components: {  },
+}
+</script>
