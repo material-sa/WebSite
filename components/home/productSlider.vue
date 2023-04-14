@@ -12,8 +12,10 @@
 					</div>
 				</div>
 			</div>
+
+<div class="owl-carousel text-center">			
 <client-only>
-   <carousel v-bind="options" id="our_doctor" class="text-center">	
+   <carousel v-bind="options" >	
 	<slide v-for="el in sliders" :key="el.id" >	
       <div class="shadow item1" data-toggle="modal" data-target="#Buy">
         <div class="doctor text-center">
@@ -38,6 +40,7 @@
      
 	  </carousel>
         </client-only>
+		</div>
   </section>
   </div>
 </template>
@@ -49,11 +52,12 @@ export default {
    data() {
     return {
       options: {
+		    loop: true,
 			perPage:6,
 			navigationEnabled:false,
-			paginationEnabled:true,
+			paginationEnabled:false,
 			autoplayHoverPause:true,
-			autoplayTimeout:1000,
+			autoplayTimeout:3000,
 			autoplay:true
       },
 	  sliders:[

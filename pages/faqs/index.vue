@@ -116,6 +116,5 @@
 <script>
 
 export default {
-  name: "Faqs",
 };
 </script>

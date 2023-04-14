@@ -10,6 +10,18 @@
 		"new_products":"New products",
 		"best_sellers":"Best Sellers",
 		"suggested_products":"Suggested Products",
-		"more":"More"
+		"more":"More",
+		"blogs":"Blogs"
+	},
+	"contact":{
+		"name":"Name",
+		"e-mail":"E-mail",
+		"object":"Object",
+		"message":"Message",
+		"submit":"Submit",
+		"email-us":"Email us",
+		"reach-us":"Reach us",
+		"contact-us":"Contact Us",
+		"call-us":"Call us"
 	}
 }

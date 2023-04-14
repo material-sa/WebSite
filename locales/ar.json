@@ -9,7 +9,19 @@
 		"new_products":"منتجات جديدة",
 		"best_sellers":"أفضل البائعين",
 		"suggested_products":"المنتجات المقترحة",
-		"more":"اكثر"
+		"more":"اكثر",
+		"blogs":"المدونات"
 
+	},
+	"contact":{
+		"name":"الاسم",
+		"e-mail":"الإيميل",
+		"object":"الهدف",
+		"message":"الرسالة",
+		"submit":"ارسال",
+		"email-us":"ارسل لنا عبر البريد الإلكتروني",
+		"reach-us":"تصل إلينا",
+		"contact-us":"اتصل بنا",
+		"call-us":"اتصل بنا"
 	}
 }

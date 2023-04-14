@@ -195,7 +195,6 @@
 import Subscribe from "@/components/blogs/subscribe.vue";
 
 export default {
-  name: "Blogs",
   components: { Subscribe },
 };
 </script>

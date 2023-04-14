@@ -24,7 +24,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-	    {src: '~/plugins/vue-carousel.js',mode: 'client'}
+	    {src: '~/plugins/vue-carousel.js',mode: 'client'},
+		{src: '~/plugins/custom.js'}
    ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -54,12 +55,14 @@ export default {
 				  iso: 'en-US',
 				  file: 'en.json',
 				  name: 'English',
+				  dir: 'ltr',
 				},
 				{
 				  code: 'ar',
 				  iso: 'ar-SA',
 				  file: 'ar.json',
 				  name: 'Arabic',
+				  dir: 'rtl',
 				},
 			  ],vueI18n: {
 				fallbackLocale: 'en',

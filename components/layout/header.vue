@@ -13,33 +13,28 @@
 							<div class="navbar-collapse collapse" id="navbar">
 								<ul class="nav navbar-nav main-nav float-right ml-auto">
 									<li class="active nav-item">
-										<NuxtLink to="/" class="nav-link">{{$t('main_page.home')}}</NuxtLink>
+										<NuxtLink :to="localePath('/')" class="nav-link">{{$t('main_page.home')}}</NuxtLink>
 									</li>
 									<li class="nav-item">
-										<NuxtLink to="/about-us" class="nav-link">{{$t('main_page.about')}}</NuxtLink>
+										<NuxtLink :to="localePath('/about-us')" class="nav-link">{{$t('main_page.about')}}</NuxtLink>
 									</li>
 									<li class="nav-item">
-										<NuxtLink to="/products" class="nav-link">{{$t('main_page.products')}}</NuxtLink>
+										<NuxtLink :to="localePath('/products')"  class="nav-link">{{$t('main_page.products')}}</NuxtLink>
 									</li>
 									<li class="nav-item">
-										<NuxtLink to="/contact" class="nav-link">{{$t('main_page.contact')}}</NuxtLink>
+										<NuxtLink :to="localePath('/contact')" class="nav-link">{{$t('main_page.contact')}}</NuxtLink>
 									</li>
 
 									<li class="dropdown nav-item">
-										
-										 <a class="nav-link"  @click="changeLanguage">{{currentLang}} <b
-												class="caret"></b></a>
-										 
-
-										<!-- <a class="dropdown-toggle nav-link" data-toggle="dropdown">AR <b
-												class="caret"></b></a>
-										<div class="dropdown-menu dropdown-menu-right">
-											<a class="dropdown-item" href="blog.html"></a>
-											<a class="dropdown-item" href="blog-left-sidebar.html">EN</a>
-										</div> -->
+										<nuxt-link class="nav-link"
+											v-for="locale in availableLocales"
+												:key="locale.code"
+												:to="switchLocalePath(locale.code)">{{ locale.code.toUpperCase() }}</nuxt-link>
 
 									</li>
 								</ul>
+								
+
 							</div>
 						</nav>
 					</div>
@@ -52,12 +47,11 @@
 <script>
 	export default {
 	name: "Header",
-	
-	computed: {
-		currentLang() {
-		return this.$i18n.locale == 'ar' ? 'EN' : 'AR'
+   computed: {
+		availableLocales () {
+			return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
 		},
-   },
+    },
 	methods: {
 		 changeLanguage() {
            // handleLangaugeChange(this, this.$i18n.locale === 'ar' ? 'en' : 'ar', true)

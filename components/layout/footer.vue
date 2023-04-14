@@ -17,13 +17,13 @@
 							<h4 class="footer-title">Material</h4>
 							<ul class="footer-menu">
 								<li>
-									<a href="#">About Us</a>
+									<NuxtLink :to="localePath('/about-us')" class="nav-link">{{$t('main_page.about')}}</NuxtLink>
 								</li>
 								<li>
-									<a href="#">Products</a>
+									<NuxtLink :to="localePath('/products')"  class="nav-link">{{$t('main_page.products')}}</NuxtLink>
 								</li>
 								<li>
-									<a href="#">Blog</a>
+									<NuxtLink :to="localePath('/blogs')" class="nav-link">{{$t('main_page.blogs')}}</NuxtLink>
 								</li>
 							</ul>
 						</div>

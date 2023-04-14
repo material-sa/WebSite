@@ -15,12 +15,12 @@ import HomeBanner from '@/components/home/homeBanner.vue'
 import ProductSlider from '@/components/home/productSlider.vue'
 
 export default {
-  name: 'HomePage',
   components: { HomeSlider, ProductSlider, HomeBanner },
   created(){
-	this.$axios.get('product/dynamic-home-listing').then(res=>{
-		console.log("result : ", res.data)
-	})
+	//this.mymethod();
+	 this.$axios.get('product/dynamic-home-listing').then(res=>{
+	 	console.log("result : ", res.data)
+	 })
   }
 }
 </script>

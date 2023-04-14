@@ -1,5 +1,6 @@
 <template>
   <section class="section meet-doctors bg-white">
+	<client-only>
    <carousel v-bind="options" >
 	<slide v-for="item in categories" :key="item.id">
       <div class="item">
@@ -19,6 +20,7 @@
 	  </slide>
 	 
 	  </carousel>
+</client-only> 
   </section>
 </template>
 
@@ -28,12 +30,13 @@ export default {
   data() {
     return {
       options: {
+		    loop: true,
 			perPage:5,
 			navigationEnabled:false,
-			paginationEnabled:true,
+			paginationEnabled:false,
 			autoplayHoverPause:true,
-			autoplayTimeout:1000,
-			autoplay:true
+			autoplayTimeout:3000,
+			autoplay:true,
       },categories:[
 		{"id":1,"img":"~/assets/img/water.png" ,"title":"Dr. Albert Sandoval"},
 		{"id":2,"img":"~/assets/img/water.png" ,"title":"Dr. Albert Sandoval"},
