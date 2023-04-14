@@ -1,5 +1,5 @@
 <template>
-  <div>
+ <div class="main-content">
     <HomeSlider />
     <HomeBanner />
     <ProductSlider :title="$t('main_page.new_products')" />
