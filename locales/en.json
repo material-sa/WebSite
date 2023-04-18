@@ -2,16 +2,21 @@
 	
 	"main_page":{
 		"home":"HOME",
-		"about":"ABOUT US",
+		"about":"ABOUT",
 		"products":"PRODUCTS",
 		"contact":"CONTACT",
-		"slogan":"Local & Lmportrd Beverages",
+		"slogan":"Local & Imported Beverages",
 		"slogan_sub":"Delivery Solution",
 		"new_products":"New products",
 		"best_sellers":"Best Sellers",
 		"suggested_products":"Suggested Products",
 		"more":"More",
-		"blogs":"Blogs"
+		"blogs":"Blogs",
+		"faqs":"FAQS",
+		"terms_conditions":"Terms & Condition",
+		"privacy_policy":"Privacy Policy",
+		"help":"Help",
+		"material":"Material"
 	},
 	"contact":{
 		"name":"Name",
