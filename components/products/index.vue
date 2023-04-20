@@ -15,19 +15,21 @@
                 class="img-water"
                 :src="item.vProductImage"
                 :alt="item.vProductName"
-                width="150"
-                height="150"
+                width="100"
+                height="100"
               />
               <hr class="hr-margin" />
               <div class="doctor-edit doctors-name">
                 {{ item.vProductName }} {{ item.vProductUnit }}
               </div>
-              <div class="doctors-position1">price</div>
+              <div class="doctors-position1">{{$t('main_page.price')}}</div>
               <div class="doctor-edit size pb-3" style="color: #012cda">
-                {{ item.dbOriginalProductPrice }} SAR
+                {{ item.dbOriginalProductPrice }} {{$t('main_page.sar')}}
               </div>
             </a>
           </div>
+		      <div class="clearfix"></div><br/>
+
         </div>
       </div>
     </div>
