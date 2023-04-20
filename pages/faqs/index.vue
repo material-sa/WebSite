@@ -79,8 +79,8 @@
 							<div class="faqs1">
 								<div class="text-center">
 									<i style="color: #0234D1;" class="fa-solid fa-envelope"></i>
-
-									<h6>Email us</h6>
+									<h6><a href='mailto:info@material.sa?subject=material&body=!'>Email us</a>
+</h6>
 								</div>
 							</div>
 						</div>
@@ -88,7 +88,7 @@
 							<div class="faqs1">
 								<div class="text-center">
 									<i style="color: #0234D1;" class="fa-solid fa-phone"></i>
-									<h6>Call us</h6>
+									<h6><a href= "tel:+965865959659">Call us</a></h6>
 								</div>
 							</div>
 						</div>
