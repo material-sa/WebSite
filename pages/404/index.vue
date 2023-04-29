@@ -1,5 +1,5 @@
 <template>
-<div class="container" style="min-height:300px; margin-top: 100px;">
+<div class="container" style="min-height:400px; margin-top: 100px;">
         <div class="row">
           <div class="col-md-6 offset-md-3 text-center">
             <h1>404</h1>
