@@ -415,7 +415,7 @@ a:not([href]):not([tabindex]):hover {
 }
 .Buy{
     justify-content: center;
-}
+}     
 
 .social-icons>li {
     display: inline-block;
@@ -555,10 +555,7 @@ a:not([href]):not([tabindex]):hover {
 hr{
     color: #DEDEDE;
 }
-.card {
-    width: 250px ; 
-    height: 250px;
-}
+
 
 
 .card-img{
