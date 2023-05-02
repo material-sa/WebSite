@@ -71,8 +71,6 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/i18n',
     '@nuxtjs/toast',
-    '@jridgewell/sourcemap-codec',
-    '@popperjs/core',
   ],
 
   //vuetify object instance
