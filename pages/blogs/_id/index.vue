@@ -12,7 +12,7 @@ import singleBlog from "@/components/blogs/single.vue";
 import Layout from "@/layouts/main/index.vue";
 
 export default {
-  name: "Blogs",
+  name: "Blog",
   components: { singleBlog ,Layout },
 };
 </script>

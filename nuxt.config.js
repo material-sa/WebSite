@@ -41,15 +41,13 @@ export default {
     "bootstrap/dist/css/bootstrap.min.css",
     "@fortawesome/fontawesome-free/css/all.css",
     "~/assets/style/style.css",
-	"~/assets/style/style_edit.css",
+    "~/assets/style/style_edit.css",
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/vue-carousel.js', mode: 'client' },
-    { src: '~/plugins/custom.js' },
-     { src: '~/plugins/localStorage.js' }
-
+    { src: '~/plugins/custom.js' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -57,8 +55,6 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-      'bootstrap-vue/nuxt'
-
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -140,7 +136,9 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    standalone: true,
+  },
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
