@@ -65,6 +65,8 @@ export default {
 	this.getSectionData();
 
     //setting locale
+   // process.client ? localStorage.setItem('locale', this.$i18n.locale) : ''
+   process.client ?  this.$localStorage.set('locale', this.$i18n.locale) : ''
   },
   watch: {
     '$i18n.locale': {
