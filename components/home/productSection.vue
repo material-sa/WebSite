@@ -8,7 +8,7 @@
               <h2 class="text1" style="align-items: center">
                 {{ item.category_name }}
               </h2>
-              <NuxtLink :to="localePath('/products')" class="mt-1 task1">{{
+              <NuxtLink :to="localePath('/products?category_id='+item.category_id)" class="mt-1 task1">{{
                 $t('main_page.more')
               }}</NuxtLink>
             </div>
@@ -124,5 +124,20 @@ div.shadow.item1.card {
 
 .text-danger{
 	font-size:14px;
+}
+.card {
+    width: 250px ; 
+    height: 250px;
+}
+
+
+.card-img{
+    border-radius: 13px;
+    box-shadow: 0 0 3px 0px;
+}
+.card-a{
+    width: 100%;
+    text-decoration: none;
+
 }
 </style>
