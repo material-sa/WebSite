@@ -3,7 +3,7 @@
     <div class="pt-5 pb-5 mt-5 container">
       <div class="row">
         <div class="cl-md-12">
-          <h3 style="color: #012cda">Blog/Latest Posts</h3>
+          <h3 style="color: #012cda">{{$t("blogs.title")}}</h3>
         </div>
       </div>
     </div>
@@ -23,17 +23,14 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title pt-3 pb-3">
-                    How To make Super Website Design
+                   {{$t("blogs.first_title")}}
                   </h5>
-                  <p class="mb-3">Posted on 02 July, 2019</p>
+				  	<p class="mb-3"><span>{{$t("blogs.publish")}}</span><span> {{$t("blogs.first_post_date")}}</span> </p>
                   <p class="card-text pb-4">
-                    Forfeited you engrossed but gay sometimes explained. Another
-                    as studied it to evident. Merry sense given he be arise.
-                    Conduct at an replied removal an amongst. ut perspiciatis
-                    unde omnis.
+                      {{$t("blogs.first_post_details")}}
                   </p>
                   <a href="#" class="card-text"
-                    ><span class="text-muted">Read more </span>
+                    ><span class="text-muted">{{$t("blogs.read_more")}} </span>
                   </a>
                   <i class="fa-solid fa-angle-right"></i>
                 </div>
@@ -53,16 +50,14 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title pt-3 pb-3">
-                    How To make Super Website Design
+                       {{$t("blogs.first_title")}}
                   </h5>
-                  <p class="pb-3">Posted on 02 July, 2019</p>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+				  	<p class="mb-3"><span>{{$t("blogs.publish")}}</span><span> {{$t("blogs.first_post_date")}}</span> </p>
+                  <p class="card-text pb-4">
+                      {{$t("blogs.second_post_details")}}
                   </p>
                   <a href="#" class="card-text"
-                    ><span class="text-muted">Read more </span>
+                    ><span class="text-muted">{{$t("blogs.read_more")}} </span>
                   </a>
                   <i class="fa-solid fa-angle-right"></i>
                 </div>
@@ -81,12 +76,12 @@
                         class="nav-link active"
                         href="#top-tab1"
                         data-toggle="tab"
-                        >Popular</a
+                        >{{$t("blogs.popular")}}</a
                       >
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#top-tab2" data-toggle="tab"
-                        >Trending</a
+                        > {{$t("blogs.trending")}}</a
                       >
                     </li>
                   </ul>
@@ -104,9 +99,9 @@
                           <div class="col-md-8">
                             <div class="card-body">
                               <h6 class="card-title">
-                                How To make Super Website Design
+                                {{$t("blogs.first_title")}}
                               </h6>
-                              <p class="mb-3">Posted on 02 July, 2019</p>
+                              <p class="mb-3">{{$t("blogs.first_post_date")}}</p>
                             </div>
                           </div>
                         </div>
@@ -125,9 +120,9 @@
                           <div class="col-md-8">
                             <div class="card-body">
                               <h6 class="card-title">
-                                How To make Super Website Design
+                                {{$t("blogs.first_title")}}
                               </h6>
-                              <p class="mb-3">Posted on 02 July, 2019</p>
+                              <p class="mb-3">{{$t("blogs.first_post_date")}}</p>
                             </div>
                           </div>
                         </div>
@@ -146,9 +141,9 @@
                           <div class="col-md-8">
                             <div class="card-body">
                               <h6 class="card-title">
-                                How To make Super Website Design
+                                 {{$t("blogs.first_title")}}
                               </h6>
-                              <p class="mb-3">Posted on 02 July, 2019</p>
+                              <p class="mb-3">{{$t("blogs.first_post_date")}}</p>
                             </div>
                           </div>
                         </div>
@@ -167,9 +162,9 @@
                           <div class="col-md-8">
                             <div class="card-body">
                               <h6 class="card-title">
-                                How To make Super Website Design
+                                {{$t("blogs.first_title")}}
                               </h6>
-                              <p class="mb-3">Posted on 02 July, 2019</p>
+                              <p class="mb-3">{{$t("blogs.first_post_date")}}</p>
                             </div>
                           </div>
                         </div>
