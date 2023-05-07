@@ -63,6 +63,13 @@ export default {
 </script>
 
 <style scoped>
+div.shadow.item1.card {
+  width: 200px !important;
+}
+
+.text-danger{
+	font-size:14px;
+}
 .card {
     width: 250px ; 
     height: 250px;

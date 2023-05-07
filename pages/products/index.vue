@@ -37,7 +37,7 @@ export default {
   methods: {
     async getAllProducts(page) {
           const searchParam= (this.searchVal.length > 0 ) ? { vSerchString: this.searchVal } : ''
-		  const CategoyParam= (this.category_id.length > 0 ) ? {  iCategoryId : this.category_id } :''
+		  const CategoyParam= (this.category_id != "undefined" ) ? {  iCategoryId : this.category_id } :''
 		
 		const body= { ...searchParam, ...CategoyParam }
       const res = await Product_API.getProducts(page, body)

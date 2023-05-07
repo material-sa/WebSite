@@ -9,8 +9,7 @@
     "generate": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js generate",
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:prettier",
-    "lintfix": "prettier --write --list-different .",
-	"deploy": "pm2 start npm --name material -- start"
+    "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
@@ -34,11 +33,5 @@
   "devDependencies": {
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.7.1"
-  },
-  "config": {
-    "nuxt": {
-        "host": "0.0.0.0", 
-        "port": "3000"  
-    }
-   }
+  }
 }
