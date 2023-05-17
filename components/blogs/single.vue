@@ -5,8 +5,8 @@
         <div class="row">
           <div class="cl-md-12">
             <h3 style="color: #8b8b8b">
-              Blog <i class="fa-solid fa-angle-right"></i>
-              <span style="color: #012cda">How to make…</span>
+              {{$t('main_page.blogs')}}  <i :class="$i18n.locale == 'en' ? 'fa-solid fa-angle-right' : 'fa-solid fa-angle-left'"></i>
+              <span style="color: #012cda">{{ blog.blogDetail?.vTitle }}</span>
             </h3>
           </div>
         </div>
@@ -20,37 +20,23 @@
               <div class="padding-img col-md-4">
                 <div>
                   <img
-                    src="@/assets/img/18.png"
+                    :src="blog?.blogDetail?.vImage"
                     class="img-fluid rounded-start"
                     alt="..."
                   />
                 </div>
               </div>
               <div class="padding-img col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">How To make Super Website Design</h5>
-                  <p class="mb-3">Posted on 02 July, 2019</p>
-                  <p class="card-text">
-                    Forfeited you engrossed but gay sometimes explained. Another
-                    as studied it to evident. Merry sense given he be arise.
-                    Conduct at an replied removal an amongst. ut perspiciatis
-                    unde omnis Forfeited you engrossed but gay sometimes
-                    explained. Another as studied it to evident. Merry sense
-                    given he be arise. Conduct at an replied removal an amongst.
-                    ut perspiciatis unde omnis. Forfeited you engrossed but gay
-                    sometimes explained. Another as studied it to evident. Merry
-                    sense given he be arise. Conduct at an replied removal an
-                    amongst. ut perspiciatis unde omnis.
+                <div :class="$i18n.locale == 'en' ? 'card-body text-left' : 'card-body text-right'">
+                  <h5 class="card-title">{{ blog.blogDetail?.vTitle }}</h5>
+                  <p class="mb-3">
+                    {{ $t('blogs.publish') }}  {{ blog.blogDetail?.created_at }}
                   </p>
-                  <p class="card-text pt-5 pb-5">
-                    Forfeited you engrossed but gay sometimes explained. Another
-                    as studied it to evident. Merry sense given he be arise.
-                    Conduct at an replied removal an amongst. ut perspiciatis
-                    unde omnis Forfeited you engrossed but gay sometimes
-                    explained. Another as studied it to evident. Merry sense
-                    given he be arise. Conduct at an replied removal an amongst.
-                    ut perspiciatis unde omnis. .
-                  </p>
+                  <p class="card-text" v-html="blog.blogDetail?.txContent"></p>
+                  <p
+                    class="card-text pt-5 pb-5"
+                    v-html="blog.blogDetail?.txMetaDescription"
+                  ></p>
                 </div>
               </div>
             </div>
@@ -60,3 +46,40 @@
     </div>
   </section>
 </template>
+<script>
+import blogs_api from '~/services/apis/blogs_api'
+
+export default {
+  head(){
+    return this.headers_data
+  },
+  computed: {
+    headers_data() {
+      return {
+        title: this.blog.vTitle,
+        meta: [
+          { charset: 'utf-8' },
+          { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+          {
+            name: "description",
+            content: this.blog.txMetaDescription
+          },
+        ],
+      }
+    },
+  },
+  data() {
+    return {
+      blog: {},
+    }
+  },
+  methods: {
+    async fetchBlog() {
+      this.blog = (await blogs_api.getBlog(this.$route.params.id)).responseData
+    },
+  },
+  created() {
+    this.fetchBlog()
+  },
+}
+</script>
