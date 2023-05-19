@@ -7,8 +7,9 @@ Vue.mixin({
 		}
 	},
     methods: {
-      sayIt(name) {
-      }
+		messageWithoutSpaces(message) {
+			return message.replace(/\s/g, '');
+        }
     }
   })
 
