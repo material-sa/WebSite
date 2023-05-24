@@ -1,5 +1,4 @@
 <template>
-<meta name="google-site-verification" content="pP3gilFAJXRkTCnRwZjSmm7RFgYyiaFPHEVpK_qgYMo" />
   <div>
     <header class="header">
       <div class="header-top">
