@@ -1,4 +1,5 @@
 <template>
+<meta name="google-site-verification" content="pP3gilFAJXRkTCnRwZjSmm7RFgYyiaFPHEVpK_qgYMo" />
   <section class="section meet-doctors bg-white">
     <client-only>
       <carousel v-bind="options" class="owl-carousel text-center">
