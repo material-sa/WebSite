@@ -135,7 +135,8 @@
     <!-- </div> -->
   </div>
 </template>
-
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4135220810342891"
+     crossorigin="anonymous"></script>
 <script>
 export default {
   name: 'Header',
