@@ -135,6 +135,7 @@
     <!-- </div> -->
   </div>
 </template>
+<script>
 export default {
   name: 'Header',
   computed: {
@@ -152,4 +153,5 @@ export default {
     },
   },
 }
+</script>
 
