@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import seoMeta from '@/services/seoMeta.js'
+
 export default {
   data() {
     return {
@@ -39,6 +41,9 @@ export default {
       },
     }
   },
+  head: (app) => {
+    return  seoMeta.renderMeta('default',app?._i18n?.locale)
+ },
 }
 </script>
 <style scoped>
