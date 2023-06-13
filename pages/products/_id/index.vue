@@ -92,7 +92,7 @@
 
 
 
-<script>
+<script setup>
 
 export default {
 
@@ -109,13 +109,13 @@ export default {
     },	
   head() {
     return {
-      title: this.carDetails.vProductName,
+      title:  this.carDetails?.vProductName,
             meta: [
-                { hid: 'og-title', name : 'og:title',property: 'og:title', content: this.carDetails?.vProductName },
-				{ hid: 'og-title', name : 'title', content: this.carDetails?.vProductName },
-				{ hid: 'og-description', name : 'og:description', property: 'og:description',content: this.carDetails?.txProductDescription },
+                { hid: 'og:title', name : 'og:title',property: 'og:title', content: this.carDetails?.vProductName },
+				{ hid: 'title', name : 'title', content: this.carDetails?.vProductName },
+				{ hid: 'og:description', name : 'og:description', property: 'og:description',content: this.carDetails?.txProductDescription },
 				{ hid: 'description', name : 'description', content: this.carDetails?.txProductDescription },
-				{ hid: 'og-image', name : 'og:image', property: 'og:image',content: this.carDetails?.vProductImage },
+				{ hid: 'og:image', name : 'og:image', property: 'og:image',content: this.carDetails?.vProductImage },
                 { hid: 'keywords', name: 'keywords', content: this.$t("meta.keywords") },
             ],
     }
