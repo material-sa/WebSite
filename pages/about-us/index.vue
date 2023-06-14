@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import seoMeta from '@/services/seoMeta.js'
+
 export default {
   data() {
     return {
@@ -38,7 +40,10 @@ export default {
         autoplay: true,
       },
     }
-  },computed:{
+  },
+   head: (app) => {
+		return  seoMeta.renderMeta('default',app?._i18n?.locale)
+   },computed:{
    settingObj() {
 	   return this.$store.state.setting.allsetting;
     },

@@ -165,6 +165,7 @@
 </template>
 <script>
 import blogs_api from '~/services/apis/blogs_api'
+import seoMeta from '@/services/seoMeta.js'
 
 export default {
   name: 'all-blogs',
@@ -176,7 +177,9 @@ export default {
       popularblogs: [],
     }
   },
-  
+   head: (app) => {
+		return  seoMeta.renderMeta('default',app?._i18n?.locale)
+   },
   methods: {
     async getdata() {
       this.blogs = (await blogs_api.getBlogs()).responseData
