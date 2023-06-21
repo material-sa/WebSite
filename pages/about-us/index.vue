@@ -28,6 +28,9 @@
 import seoMeta from '@/services/seoMeta.js'
 
 export default {
+  head: (app) => {
+	 return  seoMeta.renderMeta('default',app?._i18n?.locale)
+  },
   data() {
     return {
       options: {
@@ -40,10 +43,7 @@ export default {
         autoplay: true,
       },
     }
-  },
-   head: (app) => {
-		return  seoMeta.renderMeta('default',app?._i18n?.locale)
-   },computed:{
+  },computed:{
    settingObj() {
 	   return this.$store.state.setting.allsetting;
     },

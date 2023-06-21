@@ -97,6 +97,9 @@ import CONTACT_API from '@/services/apis/contact_api'
 import seoMeta from '@/services/seoMeta.js'
 
 export default {
+  head: (app) => {
+	 return  seoMeta.renderMeta('default',app?._i18n?.locale)
+  },
   data() {
     return {
       vName: '',
@@ -104,9 +107,6 @@ export default {
       txDescription: '',
     }
   },
-   head: (app) => {
-		return  seoMeta.renderMeta('default',app?._i18n?.locale)
-   },
   computed:{
    settingObj() {
 	   return this.$store.state.setting.allsetting;
