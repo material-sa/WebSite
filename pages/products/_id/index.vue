@@ -96,18 +96,7 @@
 import Product_API from '@/services/apis/product_api'
 
 export default {
-	async asyncData({ store ,params}) {
-         // fetch data from API
-        try {
-            const singleProduct = await store.dispatch('products/fetchProduct', params.id);
- 			 if (singleProduct){
- 			   return {singleProduct};
- 			}
-        } catch (error) {
-            // Redirect to error page or 404 depending on server response
-     }
-    },	
-   head:()=> {
+	 head() {
 	return {
       title: this.singleProduct?.vProductName,
 	   meta: [
@@ -121,16 +110,28 @@ export default {
 	}
 
   },
+	async fetch() {
+         // fetch data from API
+        try {
+		  const productId = this.$route.params?.id
+          const res = await Product_API.getProductDetail(productId)
+	     this.isExist = res.data.responseCode == 200 ? true : false
+			if (this.isExist)
+				this.singleProduct = res.data.responseData?.productDetails
+				this.$nuxt.$forceUpdate()
+				this.isLoaded = true
+        } catch (error) {
+            // Redirect to error page or 404 depending on server response
+      }
+    },	
+  
   data() {
-  }, computed:{
-	isLoaded(){
-		return this.$store.state.products.isLoading;
-	},
-	isExist(){
-		return this.$store.state.products.isLoading;
+	return {
+	  singleProduct: Object,
+	  isExist:false,
+	  isLoaded:false,
 	}
   },
-
 }
 </script>
 
